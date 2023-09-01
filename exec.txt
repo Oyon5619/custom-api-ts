@@ -1,0 +1,12 @@
+npm i cnpm rimraf --global
+
+cnpm i body-parser
+cnpm i express
+cnpm i cors
+cnpm i jsonwebtoken
+cnpm i mongoose
+cnpm i --save @types/body-parser
+cnpm i --save @types/express
+cnpm i --save @types/cors
+cnpm i --save @types/jsonwebtoken
+cnpm i --save @types/mongoose
