@@ -5,8 +5,8 @@ cnpm i express
 cnpm i cors
 cnpm i jsonwebtoken
 cnpm i mongoose
-cnpm i --save @types/body-parser
-cnpm i --save @types/express
-cnpm i --save @types/cors
-cnpm i --save @types/jsonwebtoken
-cnpm i --save @types/mongoose
+cnpm i -D @types/body-parser
+cnpm i -D @types/express
+cnpm i -D @types/cors
+cnpm i -D @types/jsonwebtoken
+cnpm i -D @types/mongoose

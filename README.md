@@ -11,19 +11,8 @@
 ## 项目启动
 
 ```shell
-npm i cnpm rimraf --global
-
-cnpm i body-parser
-cnpm i express
-cnpm i cors
-cnpm i jsonwebtoken
-cnpm i mongoose
-cnpm i --save @types/body-parser
-cnpm i --save @types/express
-cnpm i --save @types/cors
-cnpm i --save @types/jsonwebtoken
-cnpm i --save @types/mongoose
-
+npm i cnpm --global
+cnpm i
 npm start
 ```
 
@@ -57,7 +46,7 @@ npm start
 |  ├─config 存放配置的文件夹
 |  |   ├─CorsConfig.ts
 |  |   └TokenConfig.ts
-├─build
+├─build src里所有文件转js后存放的地方
 ```
 
 
@@ -90,6 +79,6 @@ content-type: application/json
 
 
 
-## 注意
+## 转js
 
 如果自己的浏览器不支持ts，则可以新建一个文件夹(明明随便)，将`build`文件夹里的文件拿出来放在这个文件夹里，然后安装好运行所需要的包，最后启动即可
