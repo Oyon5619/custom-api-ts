@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.connect('mongodb://localhost:27017/custom_db');
+mongoose.connect('mongodb://localhost:27017/custom_db').then(r => {});
 
 // 成功连接 mongodb
 mongoose.connection.on('connected', () => {
@@ -8,7 +8,7 @@ mongoose.connection.on('connected', () => {
 });
 
 // 连接失败
-mongoose.connection.on('error', (err) => {
+mongoose.connection.on('error', (err: any) => {
     console.log('mongodb连接失败...', err);
 });
 
@@ -18,3 +18,5 @@ mongoose.connection.on('disconnection', () => {
 });
 
 export default mongoose;
+
+// 每个Schema都默认带个 _id 且_id的类型是ObjectId

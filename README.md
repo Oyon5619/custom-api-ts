@@ -6,6 +6,8 @@
 
 技术栈: **nodejs** + **typescript** + **jwt** + **express** + **mongodb**
 
+环境: node.js v16.17.1
+
 
 
 ## 项目启动

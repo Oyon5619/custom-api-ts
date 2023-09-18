@@ -9,7 +9,7 @@ const whiteList = [
     /^\/user\/login/,
     /^\/user\/register/,
     /^\/public\/*/,
-    /^\/test/
+    /^\/view-test/
 ];
 
 // 拦截器配置 (token验证机制)
