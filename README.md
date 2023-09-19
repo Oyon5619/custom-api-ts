@@ -24,13 +24,12 @@ npm start
 
 ```
 src
-│  app.ts
-│
-├─config
-│      CorsConfig.ts
-│      MulterConfig.ts
-│      OpenaiConfig.ts
-│      TokenConfig.ts
+│  app.ts                            
+│                                    
+├─config                             
+│      CorsConfig.ts                 
+│      MulterConfig.ts               
+│      TokenConfig.ts                
 │
 ├─controller
 │      OssController.ts
@@ -52,7 +51,6 @@ src
 │          UserSchema.ts
 │
 ├─router
-│      ChatRouter.ts
 │      OssRouter.ts
 │      UserRouter.ts
 │
@@ -61,6 +59,7 @@ src
 │      ├─dynamic
 │      └─user
 │          └─avatar
+│                  user_default_avatar.JPG
 │
 ├─utils
 │      CodeStatus.ts
@@ -69,6 +68,7 @@ src
 │
 └─views
         test.html
+
 ```
 
 
