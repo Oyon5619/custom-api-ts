@@ -38,22 +38,22 @@ const filenameFn = (filename_prefix: string | any) => {
                      callback: (error: Error | null, filename: string) => void) {
         const arr = file.originalname.split('.');
         let suffix = arr[arr.length - 1], name = arr[0];
-        callback(null, filename_prefix + '_' + name + '.' + suffix);
+        callback(null, filename_prefix + Date.now() + '_' + name + '.' + suffix);
     }
 }
 
 // storage设置
 const userAvatarStorage = multer.diskStorage({
     destination: destinationFn('/static/images/user/avatar/'), // 设置存储路径
-    filename: filenameFn('avatar_' + Date.now()) // 存储名
+    filename: filenameFn('avatar_') // 存储名
 });
 const dynamicPhotosStorage = multer.diskStorage({
     destination: destinationFn('/static/images/dynamic/'),
-    filename: filenameFn('dy_photo_' + Date.now())
+    filename: filenameFn('dy_photo_')
 });
 const defaultStorage = multer.diskStorage({
     destination: destinationFn(process.env.APP_IMAGE_DEFAULT_PATH),
-    filename: filenameFn('image_' + Date.now())
+    filename: filenameFn('image_')
 });
 
 

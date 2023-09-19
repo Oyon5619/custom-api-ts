@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import { IDynamic } from "../interfaces";
 
-const dynamicSchema = new mongoose.Schema({
+const dynamicSchema = new mongoose.Schema<IDynamic>({
     promulgatorId: String, // 发布人Id
     promulgatorName: String, // 发布人姓名,
     promulgatorAvatar: { type: String, default: '' }, // 发布人头像

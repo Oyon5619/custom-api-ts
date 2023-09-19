@@ -1,5 +1,4 @@
 import express, { Router } from "express";
-import OssController from "../controller/OssController";
 import ossController from "../controller/OssController";
 
 const ossRouter = express.Router();
