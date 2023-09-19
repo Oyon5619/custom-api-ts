@@ -4,7 +4,7 @@ mongoose.connect('mongodb://localhost:27017/custom_db').then(r => {});
 
 // 成功连接 mongodb
 mongoose.connection.on('connected', () => {
-    console.log('mongodb连接成功! url是: mongodb://localhost:27017/custom_db');
+    console.log('mongodb连接成功! mongodb://localhost:27017/custom_db');
 });
 
 // 连接失败

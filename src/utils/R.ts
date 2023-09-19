@@ -4,14 +4,14 @@ class R {
     // _code 状态码
     // _msg 返回消息
     // _data 返回数据
-    private _code: string
-    private _msg: string
-    private _data: any
+    private code: string
+    private msg: string
+    private data: any
 
     constructor(code: string, msg: string, data: any) {
-        this._code = code;
-        this._msg = msg;
-        this._data = data;
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
     }
 
     static success(msg: string, data: any = null) {

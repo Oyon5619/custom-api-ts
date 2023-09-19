@@ -54,6 +54,19 @@ class UserController {
         }
     }
 
+    // query single user
+    public queryOne = async (req: Request, res: Response) => {
+        // console.log(req.query);
+        const { id } = req.query || {};
+
+        try {
+            const result = await UserModel.find({ _id: id });
+            res.send(R.success('单个用户查询成功!', result));
+        } catch(err) {
+            res.send(R.error('内部异常!', err));
+        }
+    }
+
     // query all user
     public queryAll = async (req: Request, res: Response) => {
         // console.log('UserController.queryAll');

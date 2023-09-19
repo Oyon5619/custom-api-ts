@@ -8,7 +8,7 @@ import { NextFunction, Request, Response } from "express";
 const whiteList = [
     /^\/user\/login/,
     /^\/user\/register/,
-    /^\/public\/*/,
+    /^\/static\/*/,
     /^\/view-test/
 ];
 

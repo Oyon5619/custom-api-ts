@@ -23,32 +23,52 @@ npm start
 ## 目录结构
 
 ```
-├─exec.txt 里面记录了该项目要安装的包的命令
-├─package-lock.json
-├─package.json
-├─README.md
-├─tsconfig.json
-├─src
-|  ├─app.ts 入口文件
-|  ├─utils 工具文件夹
-|  |   ├─CodeStatus.ts 状态码
-|  |   └R.ts 数据返回类
-|  ├─router 路由
-|  |   └UserRouter.ts
-|  ├─mongo mongodb配置
-|  |   ├─index.ts
-|  |   ├─schema
-|  |   |   └UserSchema.ts
-|  |   ├─model
-|  |   |   └UserModel.ts
-|  ├─middleware 中间件
-|  |     └Interceptor.ts 拦截器
-|  ├─controller 控制器
-|  |     └UserController.ts 里面实现了简单的登录和注册方法
-|  ├─config 存放配置的文件夹
-|  |   ├─CorsConfig.ts
-|  |   └TokenConfig.ts
-├─build src里所有文件转js后存放的地方
+src
+│  app.ts
+│
+├─config
+│      CorsConfig.ts
+│      MulterConfig.ts
+│      OpenaiConfig.ts
+│      TokenConfig.ts
+│
+├─controller
+│      OssController.ts
+│      UserController.ts
+│
+├─dto
+├─middleware
+│      Interceptor.ts
+│
+├─mongo
+│  │  index.ts
+│  │
+│  ├─model
+│  │      UserModel.ts
+│  │
+│  └─schema
+│          CommentSchema.ts
+│          DynamicSchema.ts
+│          UserSchema.ts
+│
+├─router
+│      ChatRouter.ts
+│      OssRouter.ts
+│      UserRouter.ts
+│
+├─static
+│  └─images
+│      ├─dynamic
+│      └─user
+│          └─avatar
+│
+├─utils
+│      CodeStatus.ts
+│      FileUpload.ts
+│      R.ts
+│
+└─views
+        test.html
 ```
 
 
